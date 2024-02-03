@@ -560,7 +560,7 @@ footer li{
         justify-content: space-around;
         flex-wrap: wrap;
     }
-    .cakes, .sandwich .recipe img,.breakfast img{
+    .cakes, .sandwich .recipe img,.breakfast .right img{
         width: 100%;
         height: auto;
     }
