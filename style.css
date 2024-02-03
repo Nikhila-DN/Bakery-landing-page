@@ -620,5 +620,9 @@ footer li{
     footer{
         text-align: center;
     }
+    .breakfast .left img{
+        width:auto;
+        height:auto;
+    }
 }
 
