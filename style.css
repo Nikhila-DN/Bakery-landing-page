@@ -59,11 +59,11 @@ header ul{
 .hero div{
     margin: 6% auto;
     position: inherit;
-    z-index: 1;
+    z-index: 0;
     background-color: #18161640;
 }
 h1{
-    font-size: 50px;
+    font-size: 95px;
     letter-spacing: 0px;
     line-height: 24px;
     color: #ffffff;
@@ -200,28 +200,33 @@ h1{
 }
 .tab-pane img{
     width:100%;
-    height: 515px;
+    height: auto;
+    margin-top: 10%;
 }
 #pancakes-content{
-    height: 514px;
-    width: max-content;
-    padding: 10% 5%;
+    height: auto;
+    width: auto;
+    padding: 5%;
     background-color: #fff;
     text-align: left;
     margin: auto -5% auto auto;
    
 }
 .pancakes .tab-content{
-    margin: auto -5% auto auto;
-
+    margin-right: -5%;
 }
 .pancakes ul{
     display: flex;
+    flex-direction: row;
+    justify-content: end;
 }
 .pancakes li img{
     height: 100px;
     width: 100px;
     border-radius: 100%;
+}
+.menu-slide{
+    display: flex;
 }
 .time-box{
     width: 150px;
@@ -321,6 +326,15 @@ h1{
     background-image: url('./images/Vektor-Smartobjekt-est.png');
     background-repeat: no-repeat;
     background-position: center;
+}
+.breakfast .right ul{
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #56534c;
+    font-weight: 700;
+    font-family: "Alegreya";
+    text-align: center;
 }
 .read-btn{
     width: 190px;
@@ -511,10 +525,7 @@ footer li{
         letter-spacing: 4px;
         line-height: 20px;
     }
-    .nav-link img{
-        width: 10%;
-        height: auto;        
-    }
+   
     .hero{
         width: 100%;
         margin: auto;
@@ -529,7 +540,7 @@ footer li{
     }
     header .up{
         background-color: #3d3029;
-        padding-left: 5%;
+        text-align: center;
     }
     .caption, h1{
         font-size: 30px;
@@ -542,9 +553,12 @@ footer li{
         display: block;
         width: 100%;
     }
-    .social-media {
+    header ul:last-child{
         display: flex;
-        justify-content: space-between;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
     .cakes, .sandwich .recipe img,.breakfast img{
         width: 100%;
@@ -553,25 +567,25 @@ footer li{
     .art_of_cakes .right{
         padding: 2% 25%;
     } 
-    .mob-p{
-        font-size: 30px;
-        line-height: normal;
-    }
+    
     .sandwich .recipe{
         margin:20% auto;
         
     }
     .recipe ul{
-        top: -10%;
-        right: 5%;
+        top: -7%;
+        right: 0%;
     }
-    
+    .recipe .steps,.time-box{
+        font-size: 14px;
+    }
     .recipe .steps, .time-box,.sandwich figure img{
-        line-height: 15px;
-        width: 90px;
-        height: 90px;
+        line-height: 12px;
+        width: 100px;
+        height: 100px;
+
     }
-    footer li:nth-child(even),.sandwich::before,.header .menu-1 li:nth-child(even){
+    footer li:nth-child(even),.sandwich::before,header .menu-1 li:nth-child(even){
         display: none;
     }
     .breakfast{
@@ -603,4 +617,8 @@ footer li{
     footer ul:last-child{
         border-top: none;
     }
+    footer{
+        text-align: center;
+    }
 }
+
