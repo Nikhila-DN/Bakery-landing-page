@@ -1,5 +1,5 @@
 # Bakery Landing Page
-###Preview
+Preview
 ![Design preview for the Bakery Landing Page](./bakery_website_o.jpg)
 
 ### Links
